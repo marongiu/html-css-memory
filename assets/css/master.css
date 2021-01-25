@@ -8,6 +8,17 @@ body {
   background-color: rgb(173, 216, 230);
 }
 
+.container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.row::after {
+  content: ="";
+  display: table;
+  clear: both;
+}
+
 /* header */
 
 .title h1 {
@@ -15,53 +26,52 @@ body {
   font-family: impact;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #ffff;
   margin-top: 20px;
 }
 
+/* colonne */
 
-/* container centramento */
+[class^="col-"] {
+  float: left;
+}
 
-.container {
-  width: 50%;
-  margin: 0 auto;
+.col-100{
+  width: 100%;
 }
 
 /* main */
+
+.bg-card {
+  margin-top: 5%;
+}
 
 .card {
   width: 220px;
   height: 250px;
   border-radius: 10px;
   border: 1px solid grey;
+  margin-left: 4%;
+  float: left;
 }
 
-.image-card {
-  position: relative;
-  margin-top: 40px;
-}
+ .baloon{
+   width: 220px;
+   height: 250px;
+   border-radius: 10px;
+   border: 1px solid grey;
+   margin-left: 4%;
+   background-color: #fff;
+   background-image: url("../img/balloon.png");
+   background-size: 80%;
+   background-position: center;
+   background-repeat: no-repeat;
+   float: left;
+   position: relative;
+ }
 
-.left-center {
+#text {
   position: absolute;
+  bottom: 6%;
   left: 25%;
-}
-.center {
-  position: absolute;
-  right: 26%;
-}
-
-.right {
-  position: absolute;
-  right: 0;
-}
-
-#special {
-  width: 220px;
-  height: 250px;
-  border-radius: 10px;
-  background-color: #fff;
-  background-image: url("../img/noun_air_balloon_3134741.png");
-  background-size: 90%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
