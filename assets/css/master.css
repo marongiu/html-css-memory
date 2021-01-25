@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(173, 216, 230);
+  font-family: 'Comic Sans MS';
 }
 
 .container {
@@ -23,7 +24,6 @@ body {
 
 .title h1 {
   font-size: 50px;
-  font-family: impact;
   text-transform: uppercase;
   text-align: center;
   color: #ffff;
@@ -56,22 +56,27 @@ body {
 }
 
  .baloon{
+   position: relative;
+   background: #fff url("../img/balloon.png") center no-repeat;
+   background-size: 80%;
    width: 220px;
    height: 250px;
+   margin-left: 4%;
    border-radius: 10px;
    border: 1px solid grey;
-   margin-left: 4%;
-   background-color: #fff;
-   background-image: url("../img/balloon.png");
-   background-size: 80%;
-   background-position: center;
-   background-repeat: no-repeat;
    float: left;
-   position: relative;
  }
 
 #text {
   position: absolute;
   bottom: 6%;
   left: 25%;
+  color: #e61986;
+}
+
+/* footer */
+
+.credits {
+  margin-top: 20px;
+  text-align: center;
 }
