@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(173, 216, 230);
+  font-family: 'Comic Sans MS';
+}
+
+/* header */
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-right: 10%;
+  color: #fff;
+}
+
+
+[class^="col-"] {
+  float: left;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+.col-25 {
+  width: 25%;
+
+}
+
+/* main */
+.mt {
+  margin-top: 20%;
+}
+
+.card {
+  background-image: url("../img/pattern.png");
+  background-size: 100%;
+  height: 280px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-right: 10%;
+}
+
+.special {
+  background-image: url("../img/balloon.png");
+  background-color: #fff;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 280px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-right: 10%;
+  position: relative;
+}
+
+#text {
+  position: absolute;
+  bottom: 8%;
+  right: 35%;
+  color: #e61986;
+}
+
+/* footer */
+
+.credits h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* bonus carte con hover */
+
+.tra:hover{
+  background-image: url("../img/noun_Tractor_3134797.png");
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
