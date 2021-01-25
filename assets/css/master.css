@@ -9,74 +9,74 @@ body {
   font-family: 'Comic Sans MS';
 }
 
-.container {
-  margin: 0 auto;
-  width: 60%;
-}
-
-.row::after {
-  content: ="";
-  display: table;
-  clear: both;
-}
-
 /* header */
 
-.title h1 {
-  font-size: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffff;
-  margin-top: 20px;
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: yellow;
 }
 
-/* colonne */
+.title h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-right: 10%;
+  color: #fff;
+}
+
 
 [class^="col-"] {
   float: left;
 }
 
-.col-100{
+.col-100 {
   width: 100%;
 }
 
-/* main */
+.col-25 {
+  width: 25%;
 
-.bg-card {
-  margin-top: 5%;
+}
+
+/* main */
+.mt {
+  margin-top: 20%;
 }
 
 .card {
-  width: 220px;
-  height: 250px;
+  background-image: url("../img/pattern.png");
+  background-size: 100%;
+  height: 280px;
   border-radius: 10px;
   border: 1px solid grey;
-  margin-left: 4%;
-  float: left;
+  margin-right: 10%;
 }
 
- .baloon{
-   position: relative;
-   background: #fff url("../img/balloon.png") center no-repeat;
-   background-size: 80%;
-   width: 220px;
-   height: 250px;
-   margin-left: 4%;
-   border-radius: 10px;
-   border: 1px solid grey;
-   float: left;
- }
+.special {
+  background-image: url("../img/balloon.png");
+  background-color: #fff;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 280px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-right: 10%;
+  position: relative;
+}
 
 #text {
   position: absolute;
-  bottom: 6%;
-  left: 25%;
+  bottom: 8%;
+  right: 35%;
   color: #e61986;
 }
 
 /* footer */
 
-.credits {
+.credits h3 {
   margin-top: 20px;
   text-align: center;
 }
